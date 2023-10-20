@@ -16,13 +16,13 @@ body {
 }
 
 h1 {
-    font-size: 44px;
+    font-size: 34px;
     color: rgb(251, 251, 251);
     background-color: rgb(11, 11, 11);
 }
 
 h3 {
-    font-size: 26px;
+    font-size: 16px;
     color: black;
 }
 
@@ -40,7 +40,7 @@ h3 {
     background-color: rgb(235, 239, 239);
     padding: 20px;
     border-radius: 25px;
-    max-width: 200px;
+    max-width: 150px;
     transition: background-color 0.3s;
 }
 
@@ -81,4 +81,13 @@ h3 {
 .s-icon:hover {
     background-color: #fdfac8;
 }
-
+.social {
+    display: flex;
+    flex-direction: row; /* Icons in a row for larger screens */
+    justify-content: space-between; /* Add space between icons */
+    align-items: center;
+    border-radius: 25px;
+    margin: 10px; /* Reduce margin to create a gap between s-icons */
+    padding: 10px; /* Add padding for a cleaner look */
+    background-color: rgb(23, 24, 24);
+}
