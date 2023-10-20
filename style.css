@@ -1,4 +1,4 @@
-/* Default styles for all screen sizes */
+/* Common styles for both mobile and PC */
 body {
     font-family: Arial, sans-serif;
     background-image: url('img/chr.jpg');
@@ -29,8 +29,8 @@ h3 {
 
 .icon-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 20px;
 }
 
@@ -48,6 +48,22 @@ h3 {
     text-decoration: none;
 }
 
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .icon {
+        max-width: 45%; /* Adjust the icon width for mobile */
+    }
+
+    .icon-container {
+        margin: 10px; /* Adjust the margin for mobile */
+    }
+}
+
+/* Hover effects for icons */
 .icon:hover {
     background-color: #a5d8f1;
 }
@@ -56,52 +72,18 @@ h3 {
     font-size: 10px;
 }
 
-/* Media query for smaller screens (e.g., mobile phones) */
-@media screen and (max-width: 768px) {
-    .logo {
-        width: 100px;
-        height: 100px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    h3 {
-        font-size: 14px;
-    }
-
-    .icon-container {
-        margin: 10px;
-    }
-
-    .icon {
-        margin: 10px;
-        max-width: 80px;
-    }
+.icon-y:hover {
+    background-color: #f5b0b0;
 }
 
-/* Additional media queries for even smaller screens if needed */
-@media screen and (max-width: 480px) {
-    .logo {
-        width: 80px;
-        height: 80px;
-    }
+.icon-w:hover {
+    background-color: #b3f9b9;
+}
 
-    h1 {
-        font-size: 20px;
-    }
+.icon-i:hover {
+    background-color: #fbc0e6;
+}
 
-    h3 {
-        font-size: 12px;
-    }
-
-    .icon-container {
-        margin: 5px;
-    }
-
-    .icon {
-        margin: 5px;
-        max-width: 60px;
-    }
+.icon-f:hover {
+    background-color: #79eafe;
 }
