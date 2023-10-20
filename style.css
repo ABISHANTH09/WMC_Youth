@@ -1,6 +1,7 @@
+/* Default styles for all screen sizes */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('img/chr.jpg'); /* Replace with the path to your image */
+    background-image: url('img/chr.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -9,9 +10,9 @@ body {
 }
 
 .logo {
-    width: 150px; /* Adjust the size as needed */
-    height: 150px; /* Adjust the size as needed */
-    border-radius: 50%; /* Make the logo round */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     margin: 20px;
 }
 
@@ -19,10 +20,7 @@ h1 {
     font-size: 34px;
     color: rgb(251, 251, 251);
     background-color: rgb(11, 11, 11);
-    /* padding: 20px; */
-    /* margin-left: 30%;
-    margin-right: 30%; */
-}  
+}
 
 h3 {
     font-size: 16px;
@@ -33,74 +31,77 @@ h3 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 20px; /* Add some margin to space the icons properly */
+    margin: 20px;
 }
 
 .icon {
     margin: 20px;
     text-align: center;
     background-color: rgb(235, 239, 239);
-    padding: 20px; /* Add padding to the icons for spacing */
-    border-radius: 25px; /* Add rounded corners to the icons */
-    max-width: 130px; /* Limit the maximum width of each icon */
+    padding: 20px;
+    border-radius: 25px;
+    max-width: 130px;
     transition: background-color 0.3s;
 }
-
 
 .icon a {
     text-decoration: none;
 }
+
 .icon:hover {
-    background-color: #a5d8f1; /* Change the background color on hover */
+    background-color: #a5d8f1;
 }
+
 .icon-1 {
-    font-size: 10px; /* Adjust the icon size as needed */
+    font-size: 10px;
 }
-.icon-y{
-    margin: 20px;
-    text-align: center;
-    background-color: rgb(235, 239, 239);
-    padding: 20px; /* Add padding to the icons for spacing */
-    border-radius: 25px; /* Add rounded corners to the icons */
-    max-width: 130px; /* Limit the maximum width of each icon */
-    transition: background-color 0.3s;
+
+/* Media query for smaller screens (e.g., mobile phones) */
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .icon-container {
+        margin: 10px;
+    }
+
+    .icon {
+        margin: 10px;
+        max-width: 80px;
+    }
 }
-.icon-y:hover{
-    background-color: #f5b0b0; 
-}
-.icon-w{
-    margin: 20px;
-    text-align: center;
-    background-color: rgb(235, 239, 239);
-    padding: 20px; /* Add padding to the icons for spacing */
-    border-radius: 25px; /* Add rounded corners to the icons */
-    max-width: 130px; /* Limit the maximum width of each icon */
-    transition: background-color 0.3s;
-}
-.icon-w:hover{
-    background-color: #b3f9b9; 
-}
-.icon-i{
-    margin: 20px;
-    text-align: center;
-    background-color: rgb(235, 239, 239);
-    padding: 20px; /* Add padding to the icons for spacing */
-    border-radius: 25px; /* Add rounded corners to the icons */
-    max-width: 130px; /* Limit the maximum width of each icon */
-    transition: background-color 0.3s;
-}
-.icon-i:hover{
-    background-color: #fbc0e6; 
-}
-.icon-f{
-    margin: 20px;
-    text-align: center;
-    background-color: rgb(235, 239, 239);
-    padding: 20px; /* Add padding to the icons for spacing */
-    border-radius: 25px; /* Add rounded corners to the icons */
-    max-width: 130px; /* Limit the maximum width of each icon */
-    transition: background-color 0.3s;
-}
-.icon-f:hover{
-    background-color: #79eafe; 
+
+/* Additional media queries for even smaller screens if needed */
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .icon-container {
+        margin: 5px;
+    }
+
+    .icon {
+        margin: 5px;
+        max-width: 60px;
+    }
 }
